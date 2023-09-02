@@ -1,4 +1,4 @@
-
+package regextoNFA;
 
 import java.util.Stack;
 
@@ -29,9 +29,12 @@ public class RegexEngine {
         prepareString(_regex);
     }
 
-/*
-use prepareString to insert "&" into the String so it could be easy to transform to NFA
- */
+    /**
+     * Before constructing the NFA, it's necessary to preprocess the regular expression.
+     * This involves evaluating the current character type and the preceding character to obtain the string with added concatenation symbols.
+     * For example, (a|b)*abb becomes (a|b)*&a&b&b after adding the symbols.
+     */
+
     private void prepareString(String _regex) {
         char[] regexs = _regex.replaceAll(" ", "").toCharArray();
         for (int i = 0; i < regexs.length; i++) {
@@ -48,6 +51,10 @@ use prepareString to insert "&" into the String so it could be easy to transform
                 }
             }
         }
+    }
+
+    public Graph transformNFA() {
+
     }
 
 }
