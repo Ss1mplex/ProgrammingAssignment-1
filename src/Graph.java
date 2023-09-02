@@ -17,7 +17,9 @@ public class Graph {
     public Node getStart() {
         return start;
     }
-
+    public void setEnd(Node end) {
+        this.end = end;
+    }
     public void setStart(Node start) {
         this.start = start;
     }
