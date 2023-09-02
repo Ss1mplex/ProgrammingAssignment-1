@@ -29,6 +29,9 @@ public class RegexEngine {
         prepareString(_regex);
     }
 
+/*
+use prepareString to insert "&" into the String so it could be easy to transform to NFA
+ */
     private void prepareString(String _regex) {
         char[] regexs = _regex.replaceAll(" ", "").toCharArray();
         for (int i = 0; i < regexs.length; i++) {
