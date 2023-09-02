@@ -1,5 +1,3 @@
-package regextoNFA;
-
 import java.util.Stack;
 
 public class RegexEngine {

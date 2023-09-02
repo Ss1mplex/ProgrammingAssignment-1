@@ -1,5 +1,3 @@
-package regextoNFA;
-
 public class Node {
 
     private int id;

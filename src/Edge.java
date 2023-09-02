@@ -1,6 +1,3 @@
-package regextoNFA;
-
-
 public class Edge {
     private Node begin;
     private Node end;
@@ -13,7 +10,7 @@ public class Edge {
     }
     @Override
     public String toString() {
-        return "regextoNFA.Edge [begin="+begin+", end="+end+", label="+label+"]";
+        return "Edge [begin="+begin+", end="+end+", label="+label+"]";
     }
 
 }
